@@ -50,10 +50,6 @@ class Follow(models.Model):
         verbose_name='подписка')
 
     class Meta:
-        """
-        Внутренний класс Meta для хранения метаданных
-        класса Follow.
-        """
         db_table = 'follow'
         constraints = [
             models.UniqueConstraint(
